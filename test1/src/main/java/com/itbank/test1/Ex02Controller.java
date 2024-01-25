@@ -19,6 +19,7 @@ public class Ex02Controller {
 	public void ex02(Model model) {
 		model.addAttribute("list", list);
 	}
+	
 	// 컨트롤러 함수의 반환형이 void이면, 요청 주소를 viewname으로 사용한다.
 	// while(viewName.contains("//") { viewName = viewName.replace("//", "/"); }
 	// "/WEB-INF/views//ex02.jsp" -> "/WEB-INF/views/ex02.jsp"
