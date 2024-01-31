@@ -31,4 +31,15 @@
 		delete board3 where idx = #{idx}
 	</delete>
 	
+	<!-- 반환형은 int면 resultType을 안 써도 된다. -->
+	<update id="update" parameterType="board">
+		update board3
+			set
+				title = #{title},
+				content = #{content}
+			where
+				idx = #{idx} and
+				writer = #{writer}
+	</update>
+	
 </mapper>
