@@ -1,0 +1,32 @@
+스프링빈으로 등록하고 싶지만
+
+직접적으로 요청, 응답하는 거는 serlvet-context.xml
+간접적으로 하는 거는 root-context.xml
+
+resource에서 이미지를 넣어도 되고
+외부 경로도 얼마든지 설정할 수 있다.
+
+스프링 빈으로 등록하는 방법
+1) 어노테이션
+2) 
+
+스프링 빈끼리만 의존성이 된다.
+(스프링 빈이 아닌 상태에서는 의존성을 만족시키지 못한다고 예외가 발생함)
+
+
+함수에 인터페이스 내용을 적을 수 없다.
+바디를 작성할 수 없다.
+
+
+1) jdbcTemplate
+
+2) sqlSessionTemplate
+sst.selectOne해서 직접 xml을 지정해야한다.
+
+3) interface Test3DAO
+마이마티스가 인터페이스를 가져가서
+implement하는 새로운 객체를 만들어서
+
+
+xml에도 이름들이 있어서 namespace랑 id
+
