@@ -1,0 +1,53 @@
+[프로젝트 폴더]
+|   .classpath
+|   .project
+|   .springBeans
+|   pom.xml		// 프로젝트 라이브러리 의존성 및 버전 설정
+|
++---src
+|   +---main
+|   |   +---java		// 1) .java 형식의 자바 소스 코드 파일
+|   |   |   \---com
+|   |   |       \---itbank
+|   |   |           +---controller
+|   |   |           |       HomeController.java
+|   |   |           |       MemberController.java
+|   |   |           |
+|   |   |           +---member
+|   |   |           |       MemberDTO.java
+|   |   |           |
+|   |   |           +---repository
+|   |   |           |       MemberDAO.java
+|   |   |           |       Test2DAO.java
+|   |   |           |       Test3DAO.java
+|   |   |           |       TestDAO.java
+|   |   |           |
+|   |   |           \---service
+|   |   |                   MemberService.java
+|   |   |                   TestService.java
+|   |   |
+|   |   +---resources		// 2) .java 가 아닌 파일, xml 및 properties 등
+|   |   |   |   log4j.xml
+|   |   |   |
+|   |   |   +---META-INF
+|   |   |   \---mybatis
+|   |   |           test2-mapper.xml
+|   |   |           test3-mapper.xml
+|   |   |
+|   |   \---webapp		// 3) 웹 응답을 나타내기 위해 필요한 파일. JSP 및 CSS/Javascript, image 등
+|   |       +---resources
+|   |       \---WEB-INF
+|   |           |   web.xml		// 서블릿 및 필터 설정
+|   |           |
+|   |           +---classes
+|   |           +---spring
+|   |           |   |   root-context.xml	// 모든 스프링 빈을 대상으로 참조해야 할 스프링 빈 및 설정
+|   |           |   |
+|   |           |   \---appServlet
+|   |           |           servlet-context.xml	// 서블릿이 참조해야 할 스프링 빈 및 설정
+|   |           |
+|   |           \---views
+|   |                   alert.jsp
+|   |                   home.jsp
+|   |                   member-add.jsp
+|   |                   member-list.jsp
