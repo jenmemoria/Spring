@@ -29,8 +29,8 @@
 	<nav>
 		<ul style="display: flex; padding: 0; list-style: none; justify-content: space-around;">
 			<li><a href="${cpath }/member/login">로그인</a></li>
-			<li><a href="">설문 등록</a></li>
-			<li><a href="">설문 참여</a></li>
+			<li><a href="${cpath }/survey/register">설문 등록</a></li>
+			<li><a href="${cpath }/survey/list">설문 참여</a></li>
 			<li><a href="">설문 결과</a></li>
 		</ul>
 	</nav>

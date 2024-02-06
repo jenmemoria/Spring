@@ -1,5 +1,7 @@
 package com.itbank.model;
 
+import org.springframework.web.multipart.MultipartFile;
+
 //IDX      NOT NULL NUMBER         
 //TITLE    NOT NULL VARCHAR2(500)  
 //WRITER   NOT NULL VARCHAR2(100)  
@@ -18,7 +20,21 @@ public class SurveyDTO {
 	private String contentB;
 	private String imageB;
 	
+	private MultipartFile uploadA;	// 파라미터 값으로 가져올려고 
+	private MultipartFile uploadB;
 	
+	public MultipartFile getUploadA() {
+		return uploadA;
+	}
+	public void setUploadA(MultipartFile uploadA) {
+		this.uploadA = uploadA;
+	}
+	public MultipartFile getUploadB() {
+		return uploadB;
+	}
+	public void setUploadB(MultipartFile uploadB) {
+		this.uploadB = uploadB;
+	}
 	public int getIdx() {
 		return idx;
 	}

@@ -14,7 +14,6 @@ public interface UploadDAO {
 
 	@Insert("insert into upload1 (memo, originalFileName, storeFileName) "
 			+ " values (#{memo}, #{originalFileName}, #{storeFileName})")
-	
 	int insert(Upload1DTO dto);
 
 	@Select("select * from upload1 order by idx")
