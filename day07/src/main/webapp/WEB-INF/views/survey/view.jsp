@@ -8,7 +8,8 @@
 
 <form method="POST" enctype="multipart/form-data">
 	<div>${dto.idx }${dto.title }</div>
-	<div>작성자 : ${dto.writer }</div>
+	<input type="hidden" name="writer" value="${login.userid }">
+	<input type="hidden" name="survey_idx" value="${dto.idx }">
 	<div style="display: flex; ">
 		<div>
 			<img src="${cpath }/upload/${dto.imageA}" height="150px">

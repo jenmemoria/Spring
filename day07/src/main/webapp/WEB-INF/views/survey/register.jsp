@@ -8,6 +8,7 @@ CONTENTA NOT NULL VARCHAR2(4000)
 IMAGEA   NOT NULL VARCHAR2(4000) 
 CONTENTB NOT NULL VARCHAR2(4000) 
 IMAGEB   -->
+
 <form method="POST" enctype="multipart/form-data">
 	<p><input type="text" name="title" placeholder="제목"></p>
 	<p><input type="text" name="writer" value="${login.userid }"></p>

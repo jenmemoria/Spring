@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.itbank.model.SurveyDTO;
+import com.itbank.model.Survey_ChoiceDTO;
+import com.itbank.service.ChoiceService;
 import com.itbank.service.SurveyService;
 
 @Controller
@@ -18,6 +20,7 @@ import com.itbank.service.SurveyService;
 public class SurveyController {
 
 	@Autowired private SurveyService surveyService;
+	@Autowired private ChoiceService choiceService;
 	
 	@GetMapping("/list")
 	public ModelAndView list() {
@@ -43,6 +46,14 @@ public class SurveyController {
 		SurveyDTO dto = surveyService.getBoard(idx);
 		mav.addObject("dto", dto);
 		return mav;
+	}
+	
+	@PostMapping("/view/{idx}")
+	public String insert(Survey_ChoiceDTO dto) {
+		int row = choiceService.insert(dto);
+		System.out.println(row != 0 ? "설문 완료" : "설문 실패");
+		return "redirect:/result/rsview";
+		
 	}
 	
 }
