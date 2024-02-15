@@ -53,7 +53,7 @@
 		<td>${dto.writeDate }</td>
 	</tr>
 </c:forEach>
-</body>
+</tbody>
 </table>
 
 <div style="display: flex; width: 800px; margin: 20px auto; justify-content: space-between;">
